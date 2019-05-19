@@ -1,0 +1,254 @@
+/* General Styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+.content {
+  text-align: center;
+}
+
+.bg-color {
+  background-color: rgba(6, 24, 56, .85);
+}
+
+.bg-color2 {
+  background-color: rgba(255, 255, 240, .5);
+  color: rgb(6, 24, 56);
+}
+
+.dotted-hr {
+  border-top: 1rem dotted rgb(6, 24, 56);
+  height: 0;
+  margin: 3rem auto;
+  width: 7rem;
+}
+
+.dotted-hr-light {
+  border-top: 1rem dotted rgb(255, 255, 240);
+  height: 0;
+  margin: 3rem auto;
+  width: 7rem;
+}
+
+/* Navbar Styling */
+.bg-dark {
+  background-color: rgb(6, 24, 56) !important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #EEC540;
+  font-size: 4rem;
+  font-family: 'Merriweather', serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(238, 197, 64, 1);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(238, 197, 64, .75);
+}
+
+.custom-toggler.collapse {
+  border-color: rgba(238, 197, 64, 1);
+  background-color: #061838;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(238, 197, 64, 1);
+  border-color: rgba(238, 197, 64, 1);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238,197,64, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border-color: rgba(238, 197, 64, 1);
+}
+
+.navbar-nav .nav-link {
+  text-align: right;
+}
+
+.navbar {
+  background-color: #061838;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+  background-image: url('../images/bedroom-lg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  margin: 0;
+}
+
+.jumbo-content {
+  margin-top: 15rem;
+  color: rgb(255, 255, 240);
+}
+
+.btn-primary.btn-lg {
+  color: rgb(255, 255, 240);
+  background-color: rgba(238, 197, 64, 1);
+  border-color: rgba(238, 197, 64, 1);
+}
+
+.btn-primary.btn-lg:hover {
+  background-color: rgba(238, 197, 64, .5);
+}
+
+/* Services Styling */
+#services-section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.feature {
+  margin: 2rem 0;
+}
+
+i {
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Estimate Styling */
+.estimate-section {
+  padding-top: 15rem;
+  padding-bottom: 11rem;
+}
+
+.bg-image {
+  background-image: url('../images/bed.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Why Us Styling */
+#whyus-section {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+/* Testimonial Styling */
+.carousel {
+  color: rgb(255, 255, 240);
+  height: 25rem;
+}
+
+.carousel-item {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 8rem;
+}
+
+/* Contact Styling */
+#contact-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.contact-button {
+  margin-bottom: 3rem;
+}
+
+.social {
+  font-size: 3rem;
+  color: rgb(6, 24, 56);
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.social:hover {
+  color: rgba(6, 24, 56, .5);
+}
+
+/* Media Queries */
+@media (max-width:1279px){
+  .jumbotron{
+    background-image: url('../images/bedroom-md.jpg');
+  }
+}
+
+@media (max-width: 990px) {
+  .carousel-item {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .quote {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .jumbotron {
+    text-align: center;
+  }
+
+  #services-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .estimate-section {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+
+  #whyus-section {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+  }
+
+  .carousel-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .quote {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 639px){
+  .jumbotron{
+    background-image: url('../images/bedroom-sm.jpg');
+  }
+}
+
+@media (max-width: 590px) {
+  .carousel-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .social {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+
+  .social {
+    padding: 1rem;
+  }
+}
